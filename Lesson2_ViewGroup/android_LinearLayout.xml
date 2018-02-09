@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+
+    <TextView
+        android:text="Guest List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:textColor="#F44336"/>
+
+    <TextView
+        android:text="Charles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#00E676"/>
+	<TextView
+        android:text="Jimmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#00E676"/>
+    <TextView
+        android:text="Jackie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#00E676"/>
+    <TextView
+        android:text="Devendra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#00E676"/>
+    <TextView
+        android:text="Jason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#00E676"/>
+    <TextView
+        android:text="Kunal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="#00E676"/>
+    
+</LinearLayout>
+
+<!-- 
+
+    use the android default theme
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+	  android:orientation="horizontal"
+-->

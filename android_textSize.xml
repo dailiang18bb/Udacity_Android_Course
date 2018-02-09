@@ -10,9 +10,9 @@
 
        android:textSize="14sp"
 
-       android:textAppearance="?android:textAppearanceSmall"
-       android:textAppearance="?android:textAppearanceMedium"
-       android:textAppearance="?android:textAppearanceLarge"
+       android:textAppearance="?android:textAppearanceSmall"     14sp
+       android:textAppearance="?android:textAppearanceMedium "   18sp
+       android:textAppearance="?android:textAppearanceLarge"     22sp
 
 
        https://plus.google.com/+AndroidDevelopers/posts/gQuBtnuk6iG

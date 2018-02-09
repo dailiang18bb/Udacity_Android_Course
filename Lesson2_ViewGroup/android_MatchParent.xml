@@ -40,6 +40,8 @@
 
 http://labs.udacity.com/android-visualizer/#/android/match-parent
 
+If the root view's width and height is "match_parent", it will fulfill the device screen.
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         300dp

@@ -59,10 +59,11 @@
 </LinearLayout>
 
 <!-- 
+	http://labs.udacity.com/android-visualizer/#/android/linear-layout
 
-    use the android default theme
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    	use the android default theme
+    	xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:orientation="vertical"
-	  android:orientation="horizontal"
+    	android:orientation="vertical"
+	android:orientation="horizontal"
 -->

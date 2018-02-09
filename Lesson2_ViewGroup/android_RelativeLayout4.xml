@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ocean"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/Pebble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pebble Beach"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image1"/>
+    
+
+    <TextView
+        android:id="@+id/California"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="California"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_toRightOf="@id/image1"
+        android:layout_below="@id/Pebble"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 miles away"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_below="@id/California"
+        android:layout_toRightOf="@id/image1"/>
+
+</RelativeLayout>
+
+
+<!--
+http://labs.udacity.com/android-visualizer/#/android/relative-layout-list-item
+
+ID
+android:id="@+id/image1"
+
+Position
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image1"
+-->

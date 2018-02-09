@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Happy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Birthday" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="To You" />
+
+</RelativeLayout>
+
+
+<!-- 
+
+		android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+		android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+
+-->
+
+<!--
+ 
+XML attributes
+android:layout_above	Positions the bottom edge of this view above the given anchor view ID. 
+android:layout_alignBaseline	Positions the baseline of this view on the baseline of the given anchor view ID. 
+android:layout_alignBottom	Makes the bottom edge of this view match the bottom edge of the given anchor view ID. 
+android:layout_alignEnd	Makes the end edge of this view match the end edge of the given anchor view ID. 
+android:layout_alignLeft	Makes the left edge of this view match the left edge of the given anchor view ID. 
+android:layout_alignParentBottom	If true, makes the bottom edge of this view match the bottom edge of the parent. 
+android:layout_alignParentEnd	If true, makes the end edge of this view match the end edge of the parent. 
+android:layout_alignParentLeft	If true, makes the left edge of this view match the left edge of the parent. 
+android:layout_alignParentRight	If true, makes the right edge of this view match the right edge of the parent. 
+android:layout_alignParentStart	If true, makes the start edge of this view match the start edge of the parent. 
+android:layout_alignParentTop	If true, makes the top edge of this view match the top edge of the parent. 
+android:layout_alignRight	Makes the right edge of this view match the right edge of the given anchor view ID. 
+android:layout_alignStart	Makes the start edge of this view match the start edge of the given anchor view ID. 
+android:layout_alignTop	Makes the top edge of this view match the top edge of the given anchor view ID. 
+android:layout_alignWithParentIfMissing	If set to true, the parent will be used as the anchor when the anchor cannot be be found for layout_toLeftOf, layout_toRightOf, etc. 
+android:layout_below	Positions the top edge of this view below the given anchor view ID. 
+android:layout_centerHorizontal	If true, centers this child horizontally within its parent. 
+android:layout_centerInParent	If true, centers this child horizontally and vertically within its parent. 
+android:layout_centerVertical	If true, centers this child vertically within its parent. 
+android:layout_toEndOf	Positions the start edge of this view to the end of the given anchor view ID. 
+android:layout_toLeftOf	Positions the right edge of this view to the left of the given anchor view ID. 
+android:layout_toRightOf	Positions the left edge of this view to the right of the given anchor view ID. 
+android:layout_toStartOf	Positions the end edge of this view to the start of the given anchor view ID. 
+-->

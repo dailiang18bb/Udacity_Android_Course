@@ -1,0 +1,13 @@
+<TextView
+    android:text="App Requirements:-The three animals in your app will be a bird, a cat and a dog. The animals on the screen should be stacked vertically with the row containing each animal taking up the same amount of vertical space, regardless of what phone the user is using. Next to each animal image should be a brief description or a fun fact about the animal."
+    android:background="@android:color/darker_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    
+    <!-- 
+    
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:layout_width="wrap_content"
+    
+    -->

@@ -1,0 +1,19 @@
+<TextView
+    android:text="I got you a free hug. Surprise!"
+    android:background="@android:color/black"
+    android:textColor="#F44336"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="45sp" />
+
+
+
+<!--  
+
+
+Color https://material.io/guidelines/style/color.html#
+	  https://www.w3schools.com/colors/colors_hex.asp	
+      
+
+
+-->

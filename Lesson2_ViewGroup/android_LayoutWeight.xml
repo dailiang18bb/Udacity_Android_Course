@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:text="Tom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F44336"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Tim"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F44336"
+        android:layout_weight="1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Todd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F44336"
+        android:layout_weight="1"
+        android:textSize="24sp" />
+
+</LinearLayout>
+
+
+<!-- 
+
+http://labs.udacity.com/android-visualizer/#/android/equal-space-children
+
+the root view should be "match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+
+
+    android:layout_height="0dp"
+    android:layout_weight="1"
+
+-->

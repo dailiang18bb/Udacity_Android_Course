@@ -9,5 +9,5 @@
 	android:src="@drawable/rocks" just the file name in drawable folder
 	android:scaleType="centerCrop"
 	android:layout_width="500dp"
-  android:layout_height="600dp"
+  	android:layout_height="600dp"
 -->

@@ -8,9 +8,10 @@
 
    <!--
 
+       android:textSize="14sp"
+
        android:textAppearance="?android:textAppearanceSmall"
        android:textAppearance="?android:textAppearanceMedium"
        android:textAppearance="?android:textAppearanceLarge"
 
    -->
-   

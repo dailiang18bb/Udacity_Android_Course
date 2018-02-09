@@ -29,11 +29,13 @@
 
 
 <!-- 
+http://labs.udacity.com/android-visualizer/#/android/relative-layout-align-to-parent
+
 
 		android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+                android:layout_alignParentTop="true"
 		android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+                android:layout_alignParentLeft="true"
 		android:layout_centerHorizontal="true"
 		android:layout_centerVertical="true"
 

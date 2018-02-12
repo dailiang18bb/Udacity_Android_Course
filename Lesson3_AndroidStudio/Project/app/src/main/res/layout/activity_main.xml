@@ -5,27 +5,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--
+    ***Change the order of the view can help on the overlapping
+
+    use together, for the bigger screen
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+    -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/creepy_birthday_card" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:fontFamily="sans-serif-light"
+        android:padding="20dp"
         android:text="From, Charles"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="36sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
+        android:layout_margin="20dp"
         android:text="Happy birthday, Mum."
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="36sp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/creepy_birthday_card" />
 
 </RelativeLayout>

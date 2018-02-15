@@ -35,3 +35,6 @@ A blog that gives you a deeper look into Android support libraries.
 Fragmented Podcast: http://fragmentedpodcast.com/
 A weekly podcast filled with Android development discussion.
 You can find Kirill on G+, and check out his #pixelpushing series.
+
+
+gogo google

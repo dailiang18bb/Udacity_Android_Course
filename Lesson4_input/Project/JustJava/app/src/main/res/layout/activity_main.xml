@@ -18,14 +18,46 @@
         android:onClick="increment"
         android:text="+" />
 
-    <TextView
-        android:id="@+id/quantity_text_view"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="0"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/num_5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/quantity_text_view"
+            android:layout_toRightOf="@+id/quantity_text_view"
+            android:onClick="setNum5"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/num_10"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/num_5"
+            android:layout_toRightOf="@+id/num_5"
+            android:onClick="setNum10"
+            android:text="10" />
+
+    </RelativeLayout>
+
 
     <Button
         android:layout_width="48dp"

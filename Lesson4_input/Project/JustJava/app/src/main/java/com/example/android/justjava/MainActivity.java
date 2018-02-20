@@ -71,4 +71,14 @@ public class MainActivity extends AppCompatActivity {
         display(quantity);
     }
 
+    public void setNum5(View view) {
+        quantity = 5;
+        display(quantity);
+    }
+
+    public void setNum10(View view) {
+        quantity = 10;
+        display(quantity);
+    }
+
 }

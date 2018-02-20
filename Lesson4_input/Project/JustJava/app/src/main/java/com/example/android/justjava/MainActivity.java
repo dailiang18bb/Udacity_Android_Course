@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(quantity);
+        //display(quantity);
         displayPrice(quantity * 5);
     }
 
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public void increment(View view) {
         quantity += 1;
         display(quantity);
+        displayPrice(quantity * 5);
     }
 
     /**
@@ -69,16 +70,19 @@ public class MainActivity extends AppCompatActivity {
     public void decrement(View view) {
         quantity = (quantity == 0) ?  quantity: quantity - 1;
         display(quantity);
+        displayPrice(quantity * 5);
     }
 
     public void setNum5(View view) {
         quantity = 5;
         display(quantity);
+        displayPrice(quantity * 5);
     }
 
     public void setNum10(View view) {
         quantity = 10;
         display(quantity);
+        displayPrice(quantity * 5);
     }
 
 }

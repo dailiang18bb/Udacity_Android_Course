@@ -51,7 +51,7 @@ Have you ever had a class where the instructions are to browse the internet for 
 
 Build up your network of Android developers on social media
 Google Developer Experts are a network of professional developers in industry (external to Google). They are recognized as leaders in their communities - speaking at conferences, publishing tutorials, and mentoring developers. You can look at their profiles here and follow them on social media.
-https://developers.google.com/experts/all/technology/androidutm_source=udacity&utm_medium=course&utm_campaign=android_basics
+https://developers.google.com/experts/all/technology/android
 
 There are also multiple communities that you can be involved with. These are great places to ask those burning Android questions.
 
@@ -64,7 +64,7 @@ Alice's Favorite Resources
 Here are the top three resources that Alice finds most useful:
 
 Lately she's been using the material design spec a lot for user interface development.
-http://www.google.com/design/spec/material-design/introduction.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+https://material.io/guidelines/material-design/introduction.html
 
 Stack Overflow is definitely used the most for day-to-day development. She usually does a search in Google and click on any Stack Overflow results first.
 http://stackoverflow.com/questions/tagged/android

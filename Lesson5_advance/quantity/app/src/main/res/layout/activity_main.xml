@@ -7,6 +7,7 @@
 
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -14,7 +15,7 @@
         android:textAllCaps="true" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:orientation="horizontal"
@@ -23,9 +24,11 @@
         <Button
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:text="-" />
+            android:text="-"
+            android:onClick="decrement"/>
 
         <TextView
+            android:id="@+id/quantityTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -35,7 +38,8 @@
         <Button
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:text="+" />
+            android:text="+"
+            android:onClick="increment"/>
 
     </LinearLayout>
 
@@ -47,6 +51,7 @@
         android:textAllCaps="true" />
 
     <TextView
+        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -56,7 +61,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="order" />
+        android:text="order"
+        android:onClick="orderBtn"/>
 
 
 </LinearLayout>

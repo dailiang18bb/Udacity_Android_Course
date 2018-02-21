@@ -38,7 +38,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void orderBtn(View view) {
-        displayPrice(quantity * 5);
+        //String priceMessage = "Amount due $" + (quantity * 5);
+        //String priceMessage = "That would be $" + (quantity * 5) + " please.";
+        //String priceMessage = "You owe " + (quantity * 5) + " bucks, dude!";
+        //String priceMessage = (quantity * 5) + " dollars for " + quantity + " cups of coffee. Pay up.";
+        String priceMessage = "Total = $" + (quantity * 5);
+        displayMessage(priceMessage);
+    }
+
+    public void displayMessage(String string) {
+        TextView priceString = (TextView) findViewById(R.id.price);
+        priceString.setText(string);
     }
 
 

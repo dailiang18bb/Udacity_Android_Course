@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         //String priceMessage = "That would be $" + (quantity * 5) + " please.";
         //String priceMessage = "You owe " + (quantity * 5) + " bucks, dude!";
         //String priceMessage = (quantity * 5) + " dollars for " + quantity + " cups of coffee. Pay up.";
-        String priceMessage = "Total = $" + (quantity * 5);
+        String priceMessage = "Total: $" + (quantity * 5) + "\nThank you!";
         displayMessage(priceMessage);
     }
 

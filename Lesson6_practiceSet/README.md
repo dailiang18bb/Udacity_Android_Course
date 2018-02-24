@@ -14,6 +14,15 @@ Their names should help you:
 ![image](https://github.com/dailiang18bb/Udacity_Android_Course/raw/master/Lesson6_practiceSet/nymDt.png)
 ________________________________________________________________________________________________
 
+github readme.md add picture
+
+        ![image](https://github.com/dailiang18bb/Udacity_Android_Course/raw/master/Lesson6_practiceSet/nymDt.png)
+
+________________________________________________________________________________________________
+
+
+
+
 Constant variables
 
     final int number = 14;

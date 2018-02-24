@@ -20,7 +20,12 @@ github readme.md add picture
 
 ________________________________________________________________________________________________
 
+Github markdown file learn
 
+github markdown study(http://blog.csdn.net/Kaitiren/article/details/38513715)
+
+
+________________________________________________________________________________________________
 
 
 Constant variables

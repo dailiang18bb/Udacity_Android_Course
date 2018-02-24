@@ -11,7 +11,7 @@ Their names should help you:
     
     
     !(https://i.stack.imgur.com/nymDt.png)
-    !(https://github.com/dailiang18bb/Udacity_Android_Course/Lesson6_practiceSet/nymDt.png)
+    https://github.com/dailiang18bb/Udacity_Android_Course/Lesson6_practiceSet/nymDt.png
 ________________________________________________________________________________________________
 
 Constant variables

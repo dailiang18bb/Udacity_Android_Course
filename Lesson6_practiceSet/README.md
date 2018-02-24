@@ -10,7 +10,7 @@ Their names should help you:
     android:layout_gravity is the Outside gravity of the View. Specifies the direction in which the View should touch its parent's border.
     
     
-    !(https://i.stack.imgur.com/nymDt.png)
+    
     ![image](https://github.com/dailiang18bb/Udacity_Android_Course/raw/master/Lesson6_practiceSet/nymDt.png)
 ________________________________________________________________________________________________
 

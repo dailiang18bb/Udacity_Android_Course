@@ -9,7 +9,9 @@ Their names should help you:
     android:layout_gravity sets the gravity of the View or Layout relative to its parent.
     android:layout_gravity is the Outside gravity of the View. Specifies the direction in which the View should touch its parent's border.
     
-    https://i.stack.imgur.com/nymDt.png
+    
+    !(https://i.stack.imgur.com/nymDt.png)
+    !(https://github.com/dailiang18bb/Udacity_Android_Course/Lesson6_practiceSet/nymDt.png)
 ________________________________________________________________________________________________
 
 Constant variables

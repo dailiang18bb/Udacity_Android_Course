@@ -32,4 +32,7 @@ get color
 
         getColor(R.color.[colorName])
         
+        
+Toast syntx
 
+        Toast.makeText(getActivity(), R.string.please_select_an_animal_image_before_choosing_a_color,Toast.LENGTH_LONG).show();

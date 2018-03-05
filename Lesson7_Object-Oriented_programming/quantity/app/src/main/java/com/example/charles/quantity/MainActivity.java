@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private void displayQuantity(int number) {
+    private void displayQuantity(int num) {
         TextView quantityView = findViewById(R.id.quantityTextView);
-        quantityView.setText(String.valueOf(number));
+        quantityView.setText(String.valueOf(num));
     }
 
     private void displayPrice(int price) {
@@ -42,8 +42,24 @@ public class MainActivity extends AppCompatActivity {
         //String priceMessage = "That would be $" + (quantity * 5) + " please.";
         //String priceMessage = "You owe " + (quantity * 5) + " bucks, dude!";
         //String priceMessage = (quantity * 5) + " dollars for " + quantity + " cups of coffee. Pay up.";
-        String priceMessage = "Total: $" + (quantity * 5) + "\nThank you!";
-        displayMessage(priceMessage);
+        //String priceMessage =
+        displayMessage(createOrderSummary(calculatePrice()));
+
+    }
+
+    /**
+     * Create the order summary
+     *
+     * @param price is the final price after calculatePrice method
+     * @return the String summary
+     */
+    private String createOrderSummary(int price) {
+        return "Name: Charles Dai\n" + "Quantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
+    }
+
+
+    private int calculatePrice() {
+        return quantity * 5;
     }
 
     public void displayMessage(String string) {

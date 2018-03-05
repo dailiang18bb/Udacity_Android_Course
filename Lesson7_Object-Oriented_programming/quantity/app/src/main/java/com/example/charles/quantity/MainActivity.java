@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.text.NumberFormat;
-
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 0;
@@ -20,11 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private void displayQuantity(int num) {
         TextView quantityView = findViewById(R.id.quantityTextView);
         quantityView.setText(String.valueOf(num));
-    }
-
-    private void displayPrice(int price) {
-        TextView priceView = findViewById(R.id.price);
-        priceView.setText(NumberFormat.getCurrencyInstance().format(price));
     }
 
     public void decrement(View view) {
@@ -63,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayMessage(String string) {
-        TextView priceString = (TextView) findViewById(R.id.price);
-        priceString.setText(string);
+        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
+        orderSummaryTextView.setText(string);
     }
 
 

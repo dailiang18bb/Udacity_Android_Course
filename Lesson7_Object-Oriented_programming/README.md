@@ -28,5 +28,8 @@ get View
 get string
 
         getString(R.string.[stringNameInXML])
+get color
+
+        getColor(R.color.[colorName])
         
 

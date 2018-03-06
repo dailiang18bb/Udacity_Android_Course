@@ -19,3 +19,20 @@ This website can help you to generate the tables in different file type
 | /      | Slash                                  | 斜線   |
 
 
+
+Get resources in JAVA
+
+get View
+
+        TextView [viewName] = (TextView) findViewById(R.id.[viewNameInXML]);
+get string
+
+        getString(R.string.[stringNameInXML])
+get color
+
+        getColor(R.color.[colorName])
+        
+        
+Toast syntx
+
+        Toast.makeText(getActivity(), R.string.please_select_an_animal_image_before_choosing_a_color,Toast.LENGTH_LONG).show();

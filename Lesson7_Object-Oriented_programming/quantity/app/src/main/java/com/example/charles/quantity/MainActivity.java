@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        runTest();
     }
 
     private void displayQuantity(int num) {
@@ -60,5 +61,11 @@ public class MainActivity extends AppCompatActivity {
         orderSummaryTextView.setText(string);
     }
 
-
+    /**
+     * test out the get String method
+     */
+    private void runTest(){
+        TextView test = findViewById(R.id.test);
+        test.setText(getString(R.string.test));
+    }
 }

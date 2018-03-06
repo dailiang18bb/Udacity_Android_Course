@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">quantity</string>
     <string name="order_summary">order summary</string>
+    <string name="test">test</string>
 </resources>

@@ -11,8 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    int quantity = 0;
 
-    int quantity = 1;
     boolean hasWhippedCreamChecked = false;
     boolean hasChocolateChecked = false;
 
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        quantity = Integer.parseInt(getString(R.string.quantity_string));
         runTest();
     }
 
@@ -33,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         quantity = (quantity == 1) ? quantity : quantity - 1;
         */
 
-        if (quantity == 1) {
-            Toast.makeText(getApplication(), R.string.decrement_warning_msg, Toast.LENGTH_LONG).show();
+        if (quantity < 2) {
+            Toast.makeText(this, R.string.decrement_warning_msg, Toast.LENGTH_SHORT).show();
         } else {
             quantity -= 1;
         }
@@ -47,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
         quantity = (quantity <= 30) ? quantity + 1 : quantity;
         */
 
-        if (quantity == 100) {
-            Toast.makeText(getApplication(), R.string.increment_warning_msg, Toast.LENGTH_LONG).show();
+        if (quantity >= 100) {
+            Toast.makeText(this, R.string.increment_warning_msg, Toast.LENGTH_SHORT).show();
         } else {
             quantity += 1;
         }

@@ -5,4 +5,6 @@
     <string name="topping_title_text_view">toppings</string>
     <string name="topping_item_whipped_cream">Whipped cream</string>
     <string name="topping_item_chocolate">Chocolate</string>
+    <string name="decrement_warning_msg">Please select the number of coffees in between 1\-100!</string>
+    <string name="increment_warning_msg">Please select the number of coffees in between 1\-100!</string>
 </resources>

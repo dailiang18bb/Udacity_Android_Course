@@ -3,14 +3,16 @@ package com.example.charles.quantity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int quantity = 0;
+    int quantity = 1;
     boolean hasWhippedCreamChecked = false;
     boolean hasChocolateChecked = false;
 
@@ -27,12 +29,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void decrement(View view) {
-        quantity = (quantity == 0) ? quantity : quantity - 1;
+        /*
+        quantity = (quantity == 1) ? quantity : quantity - 1;
+        */
+
+        if (quantity == 1) {
+            Toast.makeText(getApplication(), R.string.decrement_warning_msg, Toast.LENGTH_LONG).show();
+        } else {
+            quantity -= 1;
+        }
         displayQuantity(quantity);
+
     }
 
     public void increment(View view) {
+        /*
         quantity = (quantity <= 30) ? quantity + 1 : quantity;
+        */
+
+        if (quantity == 100) {
+            Toast.makeText(getApplication(), R.string.increment_warning_msg, Toast.LENGTH_LONG).show();
+        } else {
+            quantity += 1;
+        }
         displayQuantity(quantity);
     }
 
@@ -65,7 +84,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private int calculatePrice() {
-        return quantity * 5;
+        int chocolateChecked = (hasChocolateChecked) ? 1 : 0;
+        int whippedCreamChecked = (hasWhippedCreamChecked) ? 1 : 0;
+        return quantity * (5 + chocolateChecked * 2 + whippedCreamChecked);
     }
 
     public void displayMessage(String string) {
@@ -82,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * checkbox update
+     * get the topping selections from checkbox update
      */
     private void hasToppingCheckBox() {
         CheckBox hasWhippedCreamCheckBox = (CheckBox) findViewById(R.id.whippedCreamCheckBox);
@@ -94,12 +115,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * get the client's name
+     * get the client's name from EditView
      *
      * @return the name
      */
     private String getName() {
         EditText getNameEditView = (EditText) findViewById(R.id.name_EditView);
-        return "" + getNameEditView.getText();
+        return getNameEditView.getText().toString();
     }
 }

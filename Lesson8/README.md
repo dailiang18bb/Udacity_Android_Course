@@ -13,6 +13,6 @@ _________
     
 ______________
     
-        Toast.makeText(getApplication(), R.string.increment_warning_msg, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, R.string.decrement_warning_msg, Toast.LENGTH_SHORT).show();
 
     

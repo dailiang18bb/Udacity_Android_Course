@@ -1,9 +1,10 @@
 package com.example.charles.quantity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -63,9 +64,20 @@ public class MainActivity extends AppCompatActivity {
         //String priceMessage = (quantity * 5) + " dollars for " + quantity + " cups of coffee. Pay up.";
         //String priceMessage =
         hasToppingCheckBox();
+        //displayMessage(createOrderSummary(calculatePrice()));
 
-        displayMessage(createOrderSummary(calculatePrice()));
 
+        /**
+         * Email intent practise
+         *
+         */
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse("mailto:")); //only Email app can solve it
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Just Java order for " + getName());
+        emailIntent.putExtra(Intent.EXTRA_TEXT, createOrderSummary(calculatePrice()));
+        if (emailIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(emailIntent);
+        }
     }
 
     /**

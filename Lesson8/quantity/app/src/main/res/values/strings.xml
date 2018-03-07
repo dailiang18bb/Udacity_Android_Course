@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">quantity</string>
+    <string name="order_summary">order summary</string>
+    <string name="test">test</string>
+    <string name="topping_title_text_view">toppings</string>
+    <string name="topping_item_whipped_cream">Whipped cream</string>
+</resources>

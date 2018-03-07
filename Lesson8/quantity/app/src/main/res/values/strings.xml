@@ -4,4 +4,5 @@
     <string name="test">test</string>
     <string name="topping_title_text_view">toppings</string>
     <string name="topping_item_whipped_cream">Whipped cream</string>
+    <string name="topping_item_chocolate">Chocolate</string>
 </resources>

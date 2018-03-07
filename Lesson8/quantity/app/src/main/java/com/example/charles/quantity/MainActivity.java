@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 0;
     boolean hasWhippedCreamChecked = false;
+    boolean hasChocolateChecked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         //String priceMessage = (quantity * 5) + " dollars for " + quantity + " cups of coffee. Pay up.";
         //String priceMessage =
         hasToppingCheckBox();
+
         displayMessage(createOrderSummary(calculatePrice()));
 
     }
@@ -52,7 +55,12 @@ public class MainActivity extends AppCompatActivity {
      * @return the String summary
      */
     private String createOrderSummary(int price) {
-        return "Name: Charles Dai\n" +"Add Whipped cream? "+ hasWhippedCreamChecked + "\nQuantity: " + quantity + "\nTotal: $" + price + "\nThank you!";
+        return "Name: " + getName()
+                + "\nAdd Whipped cream? " + hasWhippedCreamChecked
+                + "\nAdd Chocolate? " + hasChocolateChecked
+                + "\nQuantity: " + quantity
+                + "\nTotal: $" + price
+                + "\nThank you!";
     }
 
 
@@ -77,8 +85,21 @@ public class MainActivity extends AppCompatActivity {
      * checkbox update
      */
     private void hasToppingCheckBox() {
-        CheckBox hasWhippedCreamCheckBox = (CheckBox) findViewById(R.id.toppingCheckBox);
+        CheckBox hasWhippedCreamCheckBox = (CheckBox) findViewById(R.id.whippedCreamCheckBox);
         hasWhippedCreamChecked = hasWhippedCreamCheckBox.isChecked();
-        Log.v("CheckBoxStatus: ", "has whipped cream checked: "+hasWhippedCreamChecked);
+        CheckBox hasChocolateCheckBox = (CheckBox) findViewById(R.id.chocolateCheckBox);
+        hasChocolateChecked = hasChocolateCheckBox.isChecked();
+        Log.v("CheckBoxStatus: ", "has whipped cream checked: " + hasWhippedCreamChecked);
+        Log.v("CheckBoxStatus: ", "has chocolate checked: " + hasChocolateChecked);
+    }
+
+    /**
+     * get the client's name
+     *
+     * @return the name
+     */
+    private String getName() {
+        EditText getNameEditView = (EditText) findViewById(R.id.name_EditView);
+        return "" + getNameEditView.getText();
     }
 }

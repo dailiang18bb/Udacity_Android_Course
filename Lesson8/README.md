@@ -34,10 +34,6 @@ ________________
 Localization checklist
 
 
-________________
-
-https://classroom.udacity.com/courses/ud853/lessons/1623168625/concepts/16677585930923
-
 
 
 
@@ -70,3 +66,12 @@ https://www.materialpalette.com
         <item name="colorPrimaryDark">#E64A19</item>
         <item name="colorAccent">#FFC107</item>
     </style>
+
+
+____________________
+
+Material Design for Android
+https://developer.android.com/design/material/index.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+
+https://classroom.udacity.com/courses/ud853/lessons/1623168625/concepts/16677585930923

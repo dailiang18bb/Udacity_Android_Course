@@ -29,3 +29,6 @@ https://developer.android.com/guide/components/intents-common.html?utm_source=ud
         if (emailIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(emailIntent);
         }
+
+________________
+Localization checklist

@@ -47,3 +47,8 @@ Styles
 https://developer.android.com/guide/topics/ui/look-and-feel/themes.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
 
         style="@style/HeaderTextStyle"
+
+Style Resource
+https://developer.android.com/guide/topics/resources/style-resource.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+Styles and Themes
+https://developer.android.com/guide/topics/ui/look-and-feel/themes.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics

@@ -32,3 +32,8 @@ https://developer.android.com/guide/components/intents-common.html?utm_source=ud
 
 ________________
 Localization checklist
+
+
+________________
+
+https://classroom.udacity.com/courses/ud853/lessons/1623168625/concepts/16677585930923

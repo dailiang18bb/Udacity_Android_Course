@@ -29,3 +29,49 @@ https://developer.android.com/guide/components/intents-common.html?utm_source=ud
         if (emailIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(emailIntent);
         }
+
+________________
+Localization checklist
+
+
+
+
+
+__________________
+
+Styles
+https://developer.android.com/guide/topics/ui/look-and-feel/themes.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+        style="@style/HeaderTextStyle"
+
+Style Resource
+https://developer.android.com/guide/topics/resources/style-resource.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+Styles and Themes
+https://developer.android.com/guide/topics/ui/look-and-feel/themes.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+
+Support Different Screen Sizes
+https://developer.android.com/training/multiscreen/screensizes.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics#TaskUseSWQuali
+
+
+_______________
+
+Themes
+
+https://www.materialpalette.com
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#E64A19</item>
+        <item name="colorAccent">#FFC107</item>
+    </style>
+
+
+____________________
+
+Material Design for Android
+https://developer.android.com/design/material/index.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+
+https://classroom.udacity.com/courses/ud853/lessons/1623168625/concepts/16677585930923

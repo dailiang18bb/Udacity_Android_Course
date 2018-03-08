@@ -37,3 +37,12 @@ Localization checklist
 ________________
 
 https://classroom.udacity.com/courses/ud853/lessons/1623168625/concepts/16677585930923
+
+
+
+
+__________________
+
+Styles
+
+        style="@style/HeaderTextStyle"

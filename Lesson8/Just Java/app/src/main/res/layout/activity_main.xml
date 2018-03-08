@@ -13,17 +13,16 @@
             android:id="@+id/name_EditView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="NAME"
-            android:inputType="textCapWords"/>
+            android:hint="@string/name_hint"
+            android:inputType="textCapWords" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp"
             android:paddingBottom="8dp"
+            android:paddingTop="8dp"
             android:text="@string/topping_title_text_view"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            style="@style/HeaderTextStyle"
+            />
 
         <CheckBox
             android:id="@+id/whippedCreamCheckBox"
@@ -49,12 +48,9 @@
             android:textSize="16sp" />
 
         <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="quantity"
-            android:textAllCaps="true" />
+            android:text="@string/quantity_text_view"
+            style="@style/HeaderTextStyle"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -86,12 +82,9 @@
         </LinearLayout>
 
         <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="@string/order_summary"
-            android:textAllCaps="true" />
+            style="@style/HeaderTextStyle"/>
 
         <TextView
             android:id="@+id/order_summary_text_view"
@@ -105,13 +98,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="orderBtn"
-            android:text="order" />
+            android:text="@string/order_button" />
 
         <TextView
             android:id="@+id/test"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="googgo" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

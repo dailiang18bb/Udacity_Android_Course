@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Just Java.iml" filepath="$PROJECT_DIR$/Just Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/quantity.iml" filepath="$PROJECT_DIR$/quantity.iml" />
     </modules>
   </component>
 </project>

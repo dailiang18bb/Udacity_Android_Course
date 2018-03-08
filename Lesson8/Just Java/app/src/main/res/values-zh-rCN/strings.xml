@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="quantity_text_view">数量</string>
+    <string name="topping_item_chocolate">巧克力</string>
+    <string name="test">实验</string>
+    <string name="order_button">预定</string>
+    <string name="name_hint">姓名</string>
+    <string name="msg_total">金额：</string>
+    <string name="msg_thank_you">谢谢！</string>
+    <string name="msg_quantity">数量：</string>
+    <string name="msg_add_chocolate">加巧克力？</string>
+    <string name="msg_add_whipped_cream">加奶油？</string>
+    <string name="topping_item_whipped_cream">奶油</string>
+</resources>

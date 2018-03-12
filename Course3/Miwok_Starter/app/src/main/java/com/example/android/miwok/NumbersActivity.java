@@ -9,6 +9,12 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
-        setTitle(R.string.category_numbers);
+
+        /**
+         * setTitle(R.string.category_numbers);
+         * done it in manifests.xml
+         *
+         */
+
     }
 }

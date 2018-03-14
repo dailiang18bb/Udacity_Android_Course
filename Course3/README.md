@@ -40,3 +40,11 @@ Resources
             }
         });
     }
+
+# Set label
+
+AndroidManifest.xml
+
+    <activity
+    android:name=".PhrasesActivity"
+    android:label="@string/category_phrases" />

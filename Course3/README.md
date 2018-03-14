@@ -16,6 +16,12 @@ Resources
 
 1. XML
 
+        <TextView
+        android:id="@+id/numbers"
+        style="@style/CategoryStyle"
+        android:background="@color/category_numbers"
+        android:onClick="openNumberAct"
+        android:text="@string/category_numbers" />
 2.JAVA
 
     public class MainActivity extends AppCompatActivity {

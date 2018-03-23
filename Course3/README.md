@@ -67,3 +67,7 @@ Codepath tutorial on ListView and ArrayAdapter
 https://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView   
 Google I/O talk on ListView  
 https://www.youtube.com/watch?v=wDBM6wVEO70
+
+    ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+    ListView listView = (ListView) findViewById(R.id.list);
+    listView.setAdapter(itemsAdapter);

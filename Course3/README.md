@@ -59,3 +59,11 @@ Array has fixed length, support primitives and Object datatype
     test.add("Leon");
     test.remove("Charles");
     test.size();
+
+# ListView and ArrayAdapter
+Android Performance course 
+https://classroom.udacity.com/courses/ud825/lessons/3846748822/concepts/37868186490923  
+Codepath tutorial on ListView and ArrayAdapter  
+https://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView   
+Google I/O talk on ListView  
+https://www.youtube.com/watch?v=wDBM6wVEO70

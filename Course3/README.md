@@ -48,3 +48,14 @@ AndroidManifest.xml
     <activity
     android:name=".PhrasesActivity"
     android:label="@string/category_phrases" />
+
+# Java Array List VS Array
+
+ArrayList has variable length, support Object datatype
+Array has fixed length, support primitives and Object datatype
+
+    ArrayList<String> test = new ArrayList<String>();
+    test.add("Charles");
+    test.add("Leon");
+    test.remove("Charles");
+    test.size();

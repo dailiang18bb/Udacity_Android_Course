@@ -68,6 +68,23 @@ https://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView
 Google I/O talk on ListView  
 https://www.youtube.com/watch?v=wDBM6wVEO70
 
+numbersActivity.Java
+
     ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
     ListView listView = (ListView) findViewById(R.id.list);
     listView.setAdapter(itemsAdapter);
+    
+activity_numbers.xml
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.miwok.NumbersActivity"/>

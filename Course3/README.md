@@ -105,3 +105,6 @@ tools library
 
     xmlns:tools="http://schemas.android.com/tools"
     tools:text="test"
+
+rename the variable once for all
+`shift` + `Fn` + `F6`

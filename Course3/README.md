@@ -102,9 +102,12 @@ xml
     android:stretchMode="columnWidth"
 
 tools library
+https://developer.android.com/studio/write/tool-attributes.html
 
     xmlns:tools="http://schemas.android.com/tools"
     tools:text="test"
 
-rename the variable once for all
-`shift` + `Fn` + `F6`
+rename the variable once for all `shift` + `Fn` + `F6`  
+Java class https://docs.oracle.com/javase/tutorial/java/concepts/class.html  
+XML namespace https://en.wikipedia.org/wiki/XML_namespace#Namespace_names  
+

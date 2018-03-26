@@ -100,3 +100,8 @@ xml
     android:verticalSpacing="10dp"
     android:horizontalSpacing="10dp"
     android:stretchMode="columnWidth"
+
+tools library
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:text="test"

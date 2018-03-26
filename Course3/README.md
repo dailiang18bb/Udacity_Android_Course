@@ -88,3 +88,15 @@ activity_numbers.xml
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.android.miwok.NumbersActivity"/>
+
+# GridView and ArrayAdapter
+https://developer.android.com/guide/topics/ui/layout/gridview.html  
+https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView  
+
+xml
+
+    android:columnWidth="90dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"

@@ -110,4 +110,5 @@ https://developer.android.com/studio/write/tool-attributes.html
 rename the variable once for all `shift` + `Fn` + `F6`  
 Java class https://docs.oracle.com/javase/tutorial/java/concepts/class.html  
 XML namespace https://en.wikipedia.org/wiki/XML_namespace#Namespace_names  
+ArrayAdapter https://developer.android.com/reference/android/widget/ArrayAdapter.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics  
 

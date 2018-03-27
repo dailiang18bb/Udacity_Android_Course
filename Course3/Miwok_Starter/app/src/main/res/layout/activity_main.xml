@@ -42,6 +42,14 @@
         android:id="@+id/phrases"
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
-        android:text="@string/category_phrases" />
+        android:text="@string/category_phrases"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
 
 </LinearLayout>

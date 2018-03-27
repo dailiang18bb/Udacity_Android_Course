@@ -112,3 +112,10 @@ Java class https://docs.oracle.com/javase/tutorial/java/concepts/class.html
 XML namespace https://en.wikipedia.org/wiki/XML_namespace#Namespace_names  
 ArrayAdapter https://developer.android.com/reference/android/widget/ArrayAdapter.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics  
 
+
+
+# Drawable
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![density](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")

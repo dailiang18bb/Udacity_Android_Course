@@ -59,3 +59,56 @@ Array has fixed length, support primitives and Object datatype
     test.add("Leon");
     test.remove("Charles");
     test.size();
+
+# ListView and ArrayAdapter
+Android Performance course 
+https://classroom.udacity.com/courses/ud825/lessons/3846748822/concepts/37868186490923  
+Codepath tutorial on ListView and ArrayAdapter  
+https://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView   
+Google I/O talk on ListView  
+https://www.youtube.com/watch?v=wDBM6wVEO70
+
+numbersActivity.Java
+
+    ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+    ListView listView = (ListView) findViewById(R.id.list);
+    listView.setAdapter(itemsAdapter);
+    
+activity_numbers.xml
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.miwok.NumbersActivity"/>
+
+# GridView and ArrayAdapter
+https://developer.android.com/guide/topics/ui/layout/gridview.html  
+https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView  
+
+xml
+
+    android:columnWidth="90dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+
+tools library
+https://developer.android.com/studio/write/tool-attributes.html
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:text="test"
+
+rename the variable once for all `shift` + `Fn` + `F6`  
+Java class https://docs.oracle.com/javase/tutorial/java/concepts/class.html  
+XML namespace https://en.wikipedia.org/wiki/XML_namespace#Namespace_names  
+ArrayAdapter https://developer.android.com/reference/android/widget/ArrayAdapter.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics  
+

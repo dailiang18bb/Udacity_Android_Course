@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,15 +22,16 @@ import java.util.ArrayList;
 public class WordAdapter extends ArrayAdapter<Word> {
 
 
-    public WordAdapter (Activity context, ArrayList<Word> word) {
+    private int mViewColor;
+
+    public WordAdapter(Activity context, ArrayList<Word> word, int backGroundColor) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, word);
+        mViewColor = backGroundColor;
     }
-
-
 
 
     @NonNull
@@ -39,6 +42,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.my_list_view_1, parent, false);
         }
+
 
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word word = getItem(position);
@@ -56,10 +60,23 @@ public class WordAdapter extends ArrayAdapter<Word> {
         defaultTextView.setText(word.getmMiwokTranslation());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
-        //ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
-        // Get the image resource ID from the current AndroidFlavor object and
-        // set the image to iconView
-        //iconView.setImageResource(currentAndroidFlavor.getImageResourceId());
+        ImageView iconView = (ImageView) listItemView.findViewById(R.id.ic_number);
+
+
+        if (word.hasImage()) {
+            // Get the image resource ID from the current AndroidFlavor object and
+            // set the image to iconView
+            iconView.setImageResource(word.getmImage());
+            iconView.setVisibility(View.VISIBLE);
+        } else {
+            iconView.setVisibility(View.GONE);
+        }
+
+        //set the background color
+        LinearLayout linearLayout = (LinearLayout) listItemView.findViewById(R.id.linearLayout);
+        int color = ContextCompat.getColor(getContext(), mViewColor);
+        linearLayout.setBackgroundColor(color);
+
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

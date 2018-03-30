@@ -137,4 +137,31 @@ ArrayAdapter https://developer.android.com/reference/android/widget/ArrayAdapter
         this.mImage = mImageSrc;
     }
     }
+    
+Learn multiple-constructors for the java class, and learn the use of `super()` and `this()`
+    
+    public class Brick extends Rectangle {
+    Color brickColor;
 
+    public Brick(int newX, int newY, int newWidth, int newHeight) {
+        super(newX, newY, newWidth, newHeight);
+        brickColor = new Color(0, 128, 255);
+    }
+
+    public Brick(int newX, int newY) {
+        this(newX, newY, 10, 10);
+    }
+
+    public Brick() {
+        this(0, 0, 10, 10);
+    }
+
+    public void setColor(Color newColor) {
+        brickColor = newColor;
+    }
+
+    public Color getColor() {
+        return brickColor;
+    }
+
+    } // End Brick

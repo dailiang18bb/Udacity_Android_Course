@@ -189,3 +189,30 @@ http://java.meritcampus.com/core-java-topics/this-keyword-in-java-with-example-p
     {
         this(name, 0, 'A');
     }
+
+
+# Java static and final
+https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html  
+https://www.cnblogs.com/dotgua/p/6354151.html?utm_source=itdadao&utm_medium=referral
+
+    public class Word {
+
+    private int mImage = NO_IMAGE;
+    private static final int NO_IMAGE = -1;
+
+
+    public Word(String defaultText, String miwokText) {
+        mDefaultTranslation = defaultText;
+        mMiwokTranslation = miwokText;
+    }
+
+    public Word(String defaultText, String miwokText, int mImageSrc) {
+        this.mDefaultTranslation = defaultText;
+        this.mMiwokTranslation = miwokText;
+        this.mImage = mImageSrc;
+    }
+
+    public boolean hasImage(){
+        return mImage != NO_IMAGE;
+    }
+    }

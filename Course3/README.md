@@ -118,3 +118,23 @@ ArrayAdapter https://developer.android.com/reference/android/widget/ArrayAdapter
 ![density](https://github.com/dailiang18bb/Udacity_Android_Course/blob/master/Course3/Density.png)
 
 
+# Multiple Constructors for Word Class
+
+    public class Word {
+
+    private String mDefaultTranslation;
+    private String mMiwokTranslation;
+    private int mImage;
+
+    public Word(String defaultText, String miwokText) {
+        mDefaultTranslation = defaultText;
+        mMiwokTranslation = miwokText;
+    }
+
+    public Word(String defaultText, String miwokText, int mImageSrc) {
+        this.mDefaultTranslation = defaultText;
+        this.mMiwokTranslation = miwokText;
+        this.mImage = mImageSrc;
+    }
+    }
+

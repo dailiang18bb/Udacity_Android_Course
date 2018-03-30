@@ -118,3 +118,101 @@ ArrayAdapter https://developer.android.com/reference/android/widget/ArrayAdapter
 ![density](https://github.com/dailiang18bb/Udacity_Android_Course/blob/master/Course3/Density.png)
 
 
+# Multiple Constructors for Word Class
+
+    public class Word {
+
+    private String mDefaultTranslation;
+    private String mMiwokTranslation;
+    private int mImage;
+
+    public Word(String defaultText, String miwokText) {
+        mDefaultTranslation = defaultText;
+        mMiwokTranslation = miwokText;
+    }
+
+    public Word(String defaultText, String miwokText, int mImageSrc) {
+        this.mDefaultTranslation = defaultText;
+        this.mMiwokTranslation = miwokText;
+        this.mImage = mImageSrc;
+    }
+    }
+    
+Learn multiple-constructors for the java class, and learn the use of `super()` and `this()`
+    
+    public class Brick extends Rectangle {
+    Color brickColor;
+
+    public Brick(int newX, int newY, int newWidth, int newHeight) {
+        super(newX, newY, newWidth, newHeight);
+        brickColor = new Color(0, 128, 255);
+    }
+
+    public Brick(int newX, int newY) {
+        this(newX, newY, 10, 10);
+    }
+
+    public Brick() {
+        this(0, 0, 10, 10);
+    }
+
+    public void setColor(Color newColor) {
+        brickColor = newColor;
+    }
+
+    public Color getColor() {
+        return brickColor;
+    }
+
+    } // End Brick
+
+Here we have used this keyword, both to distinguish (or identify) the member variables from the parameters and also to call the same class constructor.  
+In CONSTRUCTOR 1, we have initialized the member variables this.name, this.marks and this.section with parameters name, marks and section.  
+In CONSTRUCTOR 2, we are calling the CONSTRUCTOR 1 using this keyword.  
+Similarly, in CONSTRUCTOR 3 also, we are calling the CONSTRUCTOR 1 using this keyword.  
+http://java.meritcampus.com/core-java-topics/this-keyword-in-java-with-example-program
+
+    // CONSTRUCTOR 1
+    Student(String name, int marks, char section)
+    {
+        this.name = name;
+        this.marks = marks;
+        this.section = section;
+    }
+    // CONSTRUCTOR 2
+    Student(String name, int marks)
+    {
+        this(name, marks, 'A');
+    }
+    // CONSTRUCTOR 3
+    Student(String name)
+    {
+        this(name, 0, 'A');
+    }
+
+
+# Java static and final
+https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html  
+https://www.cnblogs.com/dotgua/p/6354151.html?utm_source=itdadao&utm_medium=referral
+
+    public class Word {
+
+    private int mImage = NO_IMAGE;
+    private static final int NO_IMAGE = -1;
+
+
+    public Word(String defaultText, String miwokText) {
+        mDefaultTranslation = defaultText;
+        mMiwokTranslation = miwokText;
+    }
+
+    public Word(String defaultText, String miwokText, int mImageSrc) {
+        this.mDefaultTranslation = defaultText;
+        this.mMiwokTranslation = miwokText;
+        this.mImage = mImageSrc;
+    }
+
+    public boolean hasImage(){
+        return mImage != NO_IMAGE;
+    }
+    }

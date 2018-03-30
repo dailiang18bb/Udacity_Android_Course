@@ -165,3 +165,27 @@ Learn multiple-constructors for the java class, and learn the use of `super()` a
     }
 
     } // End Brick
+
+Here we have used this keyword, both to distinguish (or identify) the member variables from the parameters and also to call the same class constructor.  
+In CONSTRUCTOR 1, we have initialized the member variables this.name, this.marks and this.section with parameters name, marks and section.  
+In CONSTRUCTOR 2, we are calling the CONSTRUCTOR 1 using this keyword.  
+Similarly, in CONSTRUCTOR 3 also, we are calling the CONSTRUCTOR 1 using this keyword.  
+http://java.meritcampus.com/core-java-topics/this-keyword-in-java-with-example-program
+
+    // CONSTRUCTOR 1
+    Student(String name, int marks, char section)
+    {
+        this.name = name;
+        this.marks = marks;
+        this.section = section;
+    }
+    // CONSTRUCTOR 2
+    Student(String name, int marks)
+    {
+        this(name, marks, 'A');
+    }
+    // CONSTRUCTOR 3
+    Student(String name)
+    {
+        this(name, 0, 'A');
+    }

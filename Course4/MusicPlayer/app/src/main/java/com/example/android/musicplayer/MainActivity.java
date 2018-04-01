@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         playBtn = (Button) findViewById(R.id.playButton);
         pauseBtn = (Button) findViewById(R.id.pauseButton);
         mediaPlayer = MediaPlayer.create(this, R.raw.need_no_more);
@@ -66,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
         /**
          * change the system volume
          */
@@ -101,6 +105,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     *
+     * release the resource when destroy
+     */
+    @Override
+    protected void onDestroy() {
+        mediaPlayer.release();
+        mediaPlayer = null;
+        super.onDestroy();
+    }
+
 
 
 //    private class VolumeReceiver extends BroadcastReceiver {
@@ -115,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        }
 //    }
+
 
 
 }

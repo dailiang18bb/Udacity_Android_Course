@@ -1,5 +1,7 @@
 package com.example.android.miwok;
 
+import android.icu.util.Measure;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -37,6 +39,24 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("eight", "kawinta", R.drawable.number_eight));
         words.add(new Word("nine", "wo’e", R.drawable.number_nine));
         words.add(new Word("ten", "na’aacha", R.drawable.number_ten));
+
+
+        //MediaPlayer
+        MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.number_one);
+        MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.number_two);
+        MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.number_three);
+        MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.number_four);
+        MediaPlayer mediaPlayer5 = MediaPlayer.create(this,R.raw.number_five);
+        MediaPlayer mediaPlayer6 = MediaPlayer.create(this,R.raw.number_six);
+        MediaPlayer mediaPlayer7 = MediaPlayer.create(this,R.raw.number_seven);
+        MediaPlayer mediaPlayer8 = MediaPlayer.create(this,R.raw.number_eight);
+        MediaPlayer mediaPlayer9 = MediaPlayer.create(this,R.raw.number_nine);
+        MediaPlayer mediaPlayer10 = MediaPlayer.create(this,R.raw.number_ten);
+
+        //set onClickListener
+
+
+
 
 
         //LinearLayout rootView = findViewById(R.id.rootView);

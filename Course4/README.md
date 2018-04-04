@@ -42,3 +42,6 @@ https://blog.csdn.net/a1533588867/article/details/53738027
 # MediaPlayer Statement
 https://developer.android.com/reference/android/media/MediaPlayer.html
 ![MeadiaPlayer](https://github.com/dailiang18bb/Udacity_Android_Course/blob/master/Course4/MediaPlayerState.png)
+![MeadiaPlayer2](https://github.com/dailiang18bb/Udacity_Android_Course/blob/master/Course4/mediaplayer_state_diagram.gif)
+
+

@@ -38,4 +38,6 @@ https://blog.csdn.net/a1533588867/article/details/53738027
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-            }
+            }
+# MediaPlayer Statement
+https://developer.android.com/reference/android/media/MediaPlayer.html

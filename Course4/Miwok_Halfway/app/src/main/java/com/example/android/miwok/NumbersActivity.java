@@ -4,6 +4,9 @@ import android.icu.util.Measure;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -11,6 +14,9 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
+
+
+    ImageButton playerBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +35,7 @@ public class NumbersActivity extends AppCompatActivity {
         //Word[] test = new Word[10];
         //test[0] = new Word("asd","dsa");
 
-        words.add(new Word("one", "lutti", R.drawable.number_one));
+        words.add(new Word("one", "lutti", R.drawable.number_one, R.raw.number_one));
         words.add(new Word("two", "otiiko", R.drawable.number_two));
         words.add(new Word("three", "tolookosu", R.drawable.number_three));
         words.add(new Word("four", "oyyisa", R.drawable.number_four));
@@ -43,17 +49,19 @@ public class NumbersActivity extends AppCompatActivity {
 
         //MediaPlayer
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this,R.raw.number_one);
-        MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.number_two);
-        MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.number_three);
-        MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.number_four);
-        MediaPlayer mediaPlayer5 = MediaPlayer.create(this,R.raw.number_five);
-        MediaPlayer mediaPlayer6 = MediaPlayer.create(this,R.raw.number_six);
-        MediaPlayer mediaPlayer7 = MediaPlayer.create(this,R.raw.number_seven);
-        MediaPlayer mediaPlayer8 = MediaPlayer.create(this,R.raw.number_eight);
-        MediaPlayer mediaPlayer9 = MediaPlayer.create(this,R.raw.number_nine);
-        MediaPlayer mediaPlayer10 = MediaPlayer.create(this,R.raw.number_ten);
 
-        //set onClickListener
+//        MediaPlayer mediaPlayer2 = MediaPlayer.create(this,R.raw.number_two);
+//        MediaPlayer mediaPlayer3 = MediaPlayer.create(this,R.raw.number_three);
+//        MediaPlayer mediaPlayer4 = MediaPlayer.create(this,R.raw.number_four);
+//        MediaPlayer mediaPlayer5 = MediaPlayer.create(this,R.raw.number_five);
+//        MediaPlayer mediaPlayer6 = MediaPlayer.create(this,R.raw.number_six);
+//        MediaPlayer mediaPlayer7 = MediaPlayer.create(this,R.raw.number_seven);
+//        MediaPlayer mediaPlayer8 = MediaPlayer.create(this,R.raw.number_eight);
+//        MediaPlayer mediaPlayer9 = MediaPlayer.create(this,R.raw.number_nine);
+//        MediaPlayer mediaPlayer10 = MediaPlayer.create(this,R.raw.number_ten);
+
+
+        mediaPlayer1.setDataSource(R.raw.number_eight);
 
 
 

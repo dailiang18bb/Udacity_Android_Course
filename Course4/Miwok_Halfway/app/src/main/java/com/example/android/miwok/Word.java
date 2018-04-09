@@ -13,11 +13,13 @@ public class Word {
     private String mMiwokTranslation;
     private int mImage = NO_IMAGE;
     private static final int NO_IMAGE = -1;
+    private int mediaResource;
 
 
     public Word(String defaultText, String miwokText) {
         mDefaultTranslation = defaultText;
         mMiwokTranslation = miwokText;
+        mediaResource = mediaRes;
     }
 
     /**
@@ -27,6 +29,7 @@ public class Word {
      */
 
     public Word(String defaultText, String miwokText, int mImageSrc) {
+        this(defaultText, miwokText);
         this.mDefaultTranslation = defaultText;
         this.mMiwokTranslation = miwokText;
         this.mImage = mImageSrc;
@@ -44,7 +47,7 @@ public class Word {
         return mImage;
     }
 
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImage != NO_IMAGE;
     }
 }

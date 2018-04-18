@@ -46,3 +46,12 @@ https://www.youtube.com/watch?v=XQwe30cZffg
 ![MeadiaPlayer2](https://github.com/dailiang18bb/Udacity_Android_Course/blob/master/Course4/mediaplayer_state_diagram.gif)
 
 
+# SetOnItemClickListener
+http://www.jb51.net/article/77792.htm  
+当listview中包含button，checkbox等控件的时候，android会默认将focus给了这些控件，也就是说listview的item根本就获取不到focus，所以导致onitemclick时间不能触发。
+1. 在checkbox、button对应的view处加android:focusable=”false” 
+
+        android:clickable=”false” 
+        android:focusableInTouchMode=”false” 
+2.在item最外层添加属性 android:descendantFocusability=”blocksDescendants”
+    

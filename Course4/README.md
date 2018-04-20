@@ -58,3 +58,44 @@ http://www.jb51.net/article/77792.htm
 # toString()
 `CMD + N`->`toString()`->`Log.v("NumbersActivity", "Current word: " + word);`
 create toString() to debug
+
+# LifeCycle
+
+release the resources in the onStop()
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Log.v("MainActivity","onCreate");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.v("MainActivity","onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.v("MainActivity","onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.v("MainActivity","onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.v("MainActivity","onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.v("MainActivity","onDestroy");
+    }

@@ -54,4 +54,7 @@ http://www.jb51.net/article/77792.htm
         android:clickable=”false” 
         android:focusableInTouchMode=”false” 
 2.在item最外层添加属性 android:descendantFocusability=”blocksDescendants”
-    
+    
+# toString()
+`CMD + N`->`toString()`->`Log.v("NumbersActivity", "Current word: " + word);`
+create toString() to debug

@@ -57,6 +57,17 @@ public class Word {
     public int getMediaResource() {
         return mediaResource;
     }
+
+
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mMiwokTranslation='" + mMiwokTranslation + '\'' +
+                ", mImage=" + mImage +
+                ", mediaResource=" + mediaResource +
+                '}';
+    }
 }
 
 

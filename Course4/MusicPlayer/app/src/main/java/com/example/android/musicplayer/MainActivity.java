@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         playBtn = (Button) findViewById(R.id.playButton);
         pauseBtn = (Button) findViewById(R.id.pauseButton);
-        mediaPlayer = MediaPlayer.create(this, R.raw.need_no_more);
+        mediaPlayer = MediaPlayer.create(this, R.raw.number_four);
         seekBar = findViewById(R.id.changeVolume);
         mimageVolume = findViewById(R.id.imageVolume);
 
@@ -64,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mediaPlayer.pause();
 
+            }
+        });
+
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                Toast.makeText(MainActivity.this,"I'm done", Toast.LENGTH_SHORT).show();
             }
         });
 

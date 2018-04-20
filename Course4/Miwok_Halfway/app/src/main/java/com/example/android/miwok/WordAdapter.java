@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,6 +50,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word word = getItem(position);
 
+        //Log.v("NumbersActivity", "Current word: " + word);
+
+
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.englishWord);
         // Get the version name from the current AndroidFlavor object and
@@ -81,7 +85,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
 
         //Media Player
-        //MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.number_one);
+        //MediaPlayer mMediaPlayer = MediaPlayer.create(this,R.raw.number_one);
         //playBtn =
 
 

@@ -60,7 +60,7 @@ http://www.jb51.net/article/77792.htm
 create toString() to debug
 
 # LifeCycle
-
+https://stackoverflow.com/questions/8515936/android-activity-life-cycle-what-are-all-these-methods-for/8516056#8516056  
 release the resources in the onStop()
 
     @Override
@@ -99,3 +99,38 @@ release the resources in the onStop()
         super.onDestroy();
         Log.v("MainActivity","onDestroy");
     }
+
+# Audio Focus
+Media Playback talk at BABBQ: https://www.youtube.com/watch?v=XQwe30cZffg  
+AudioManager: https://developer.android.com/reference/android/media/AudioManager.html?utm_campaign=adp_series_audiofocus_011316&utm_source=medium&utm_medium=blog  
+
+    AudioManager.OnAudioFocusChangeListener afChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+                    public void onAudioFocusChange(int focusChange) {
+                        if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT) {
+                            // Pause playback because your Audio Focus was
+                            // temporarily stolen, but will be back soon.
+                            // i.e. for a phone call
+                        } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
+                            // Stop playback, because you lost the Audio Focus.
+                            // i.e. the user started some other playback app
+                            // Remember to unregister your controls/buttons here.
+                            // And release the kra — Audio Focus!
+                            // You’re done.
+                            am.abandonAudioFocus(afChangeListener);
+                        } else if (focusChange ==
+                                AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+                            // Lower the volume, because something else is also
+                            // playing audio over you.
+                            // i.e. for notifications or navigation directions
+                            // Depending on your audio playback, you may prefer to
+                            // pause playback here instead. You do you.
+                        } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
+                            // Resume playback, because you hold the Audio Focus
+                            // again!
+                            // i.e. the phone call ended or the nav directions
+                            // are finished
+                            // If you implement ducking and lower the volume, be
+                            // sure to return it to normal here, as well.
+                        }
+                    }
+                };

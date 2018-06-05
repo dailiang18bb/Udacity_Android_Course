@@ -154,3 +154,15 @@ https://classroom.udacity.com/courses/ud853/lessons/1623168625/concepts/16358494
             android:text="@string/category_numbers" />
     </FrameLayout>
 
+
+OPTION #2  
+Instead of adding a new view to the layout, in the word list layout, you can add the attribute android:drawSelectorOnTop="true" on the ListView XML element. With this one line change, the pressed state will be shown on each list item.  
+In word_list.xml:
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"/>
+

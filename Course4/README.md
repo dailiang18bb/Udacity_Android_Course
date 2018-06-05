@@ -134,3 +134,23 @@ AudioManager: https://developer.android.com/reference/android/media/AudioManager
                         }
                     }
                 };
+
+
+# Click ripple animation
+Touch feedback provides the user with instantaneous visual confirmation at the point of contact where they interacted with the UI elements on the screen. It is vital that the apps you develop on Android have touch feedback. They can make your app appear fast and responsive, even if nothing else happens yet.  
+
+https://guides.codepath.com/android/ripple-animation
+https://classroom.udacity.com/courses/ud853/lessons/1623168625/concepts/16358494290923
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_numbers">
+
+        <TextView
+            android:id="@+id/numbers"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_numbers" />
+    </FrameLayout>
+

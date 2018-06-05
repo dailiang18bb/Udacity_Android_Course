@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -79,9 +80,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
         }
 
         //set the background color
-        LinearLayout linearLayout = (LinearLayout) listItemView.findViewById(R.id.linearLayout);
+        RelativeLayout relativeLayout = (RelativeLayout) listItemView.findViewById(R.id.relativeLayout);
         int color = ContextCompat.getColor(getContext(), mViewColor);
-        linearLayout.setBackgroundColor(color);
+        relativeLayout.setBackgroundColor(color);
 
 
         //Media Player

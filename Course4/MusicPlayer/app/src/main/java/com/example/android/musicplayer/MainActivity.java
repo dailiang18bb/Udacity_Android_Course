@@ -25,6 +25,25 @@ public class MainActivity extends AppCompatActivity {
     private ImageView mimageVolume;
 
 
+    private AudioManager.OnAudioFocusChangeListener audioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+            if(focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT){
+                mediaPlayer.pause();
+            }else if (focusChange == AudioManager.AUDIOFOCUS_LOSS){
+                mediaPlayer.stop();
+                am.abandonAudioFocus(audioFocusChangeListener);
+            }else if(focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK){
+                mediaPlayer.pause();
+            }else if(focusChange == AudioManager.AUDIOFOCUS_GAIN){
+                mediaPlayer.start();
+            }
+        }
+    };
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +53,13 @@ public class MainActivity extends AppCompatActivity {
 
         playBtn = (Button) findViewById(R.id.playButton);
         pauseBtn = (Button) findViewById(R.id.pauseButton);
-        mediaPlayer = MediaPlayer.create(this, R.raw.number_four);
+        mediaPlayer = MediaPlayer.create(this, R.raw.need_no_more);
         seekBar = findViewById(R.id.changeVolume);
         mimageVolume = findViewById(R.id.imageVolume);
+        am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+
+        final int result = am.requestAudioFocus(audioFocusChangeListener,AudioManager.STREAM_MUSIC,AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
+
 
 
         //control the ImageView to show and disgard the seekbar
@@ -55,7 +78,11 @@ public class MainActivity extends AppCompatActivity {
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer.start();
+                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED){
+
+                    mediaPlayer.start();
+
+                }
             }
         });
 
@@ -78,10 +105,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
+
+
+
+
+
         /**
          * change the system volume
          */
-        am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         //get the System max volume
         int maxVolume = am.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         seekBar.setMax(maxVolume);
@@ -123,6 +157,17 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer = null;
         super.onDestroy();
     }
+
+
+
+    /**
+     *
+     * Audio focus
+     */
+
+
+
+
 
 
 

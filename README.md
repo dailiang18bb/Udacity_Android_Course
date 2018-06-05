@@ -77,3 +77,6 @@ You can follow Alice on G+.
 The Final Just Java Code for Lesson Two
 Speaking of Git, you can find the final code for Just Java on this Github web-page. Github is a website that facilitates sharing code online. Code on Github is organized via the Git version control system. To learn more about Git and Github, consider taking our version control course.
 
+
+Review Apps  
+http://androidniceties.tumblr.com

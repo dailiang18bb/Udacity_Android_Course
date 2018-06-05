@@ -179,3 +179,8 @@ https://developer.android.com/training/implementing-navigation/ancestral?utm_sou
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
+# Tab layout and Android pattern
+
+https://www.youtube.com/watch?v=zQekzaAgIlQ  
+https://www.youtube.com/playlist?list=PLWz5rJ2EKKc-lJo_RGGXL2Psr8vVCTWjM  

@@ -174,7 +174,7 @@ https://developer.android.com/training/implementing-navigation/ancestral?utm_sou
             android:name=".PhrasesActivity"
             android:label="@string/category_phrases"
             android:parentActivityName=".MainActivity">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <!-- Parent activity meta-data to support 4.0(API level 15) and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

@@ -247,3 +247,20 @@ MyFragmentPagerAdapter.java
             return 4;
         }
     }
+    
+    
+# Android Design Support Library
+
+https://android-developers.googleblog.com/2015/05/android-design-support-library.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+* Navigation View
+* Floating labels for editing text
+* Floating Action Button
+* Snackbar
+* Tabs
+* CoordinatorLayout, motion, and scrolling
+* CoordinatorLayout and floating action buttons
+* CoordinatorLayout and the app bar
+* Collapsing Toolbars
+* CoordinatorLayout and custom views
+

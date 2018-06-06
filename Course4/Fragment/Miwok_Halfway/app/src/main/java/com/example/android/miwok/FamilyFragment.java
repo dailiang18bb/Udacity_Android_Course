@@ -17,22 +17,18 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NumbersFragment extends Fragment {
+public class FamilyFragment extends Fragment {
 
-    /**
-     * Handles playback of all the sound files
-     */
     private MediaPlayer mMediaPlayer;
-
-    /**
-     * Handles audio focus when playing a sound file
-     */
     private AudioManager mAudioManager;
 
-    /**
-     * This listener gets triggered whenever the audio focus changes
-     * (i.e., we gain or lose audio focus because of another app or device).
-     */
+    private MediaPlayer.OnCompletionListener mOnCompletionListener = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mp) {
+            releaseMediaPlayer();
+        }
+    };
+
     private AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
@@ -58,23 +54,7 @@ public class NumbersFragment extends Fragment {
         }
     };
 
-    /**
-     * This listener gets triggered when the {@link MediaPlayer} has completed
-     * playing the audio file.
-     */
-    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
-        @Override
-        public void onCompletion(MediaPlayer mediaPlayer) {
-            // Now that the sound file has finished playing, release the media player resources.
-            releaseMediaPlayer();
-        }
-    };
-
-
-    /**
-     * Clean up the media player by releasing its resources.
-     */
-    private void releaseMediaPlayer() {
+    public final void releaseMediaPlayer() {
         // If the media player is not null, then it may be currently playing a sound.
         if (mMediaPlayer != null) {
             // Regardless of the current state of the media player, release its resources
@@ -92,59 +72,41 @@ public class NumbersFragment extends Fragment {
         }
     }
 
-
     @Override
     public void onStop() {
         super.onStop();
-
-        // When the activity is stopped, release the media player resources because we won't
-        // be playing any more sounds.
         releaseMediaPlayer();
     }
 
-
-    public NumbersFragment() {
+    public FamilyFragment() {
         // Required empty public constructor
     }
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
         /** TODO: Insert all the code from the NumberActivity’s onCreate() method after the setContentView method call */
 
-        // Create and setup the {@link AudioManager} to request audio focus
+
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
 
 
-        /**
-         * setTitle(R.string.category_numbers);
-         * done it in manifests.xml
-         *
-         */
-
-        //String[] words = {"one","two","three","four","five","six","seven","eight","nine","ten"};
-        //final allow the anonmous class get access to this list
         final ArrayList<Word> words = new ArrayList<Word>();
 
-        //Word[] test = new Word[10];
-        //test[0] = new Word("asd","dsa");
+        words.add(new Word("father", "әpә", R.drawable.family_father, R.raw.family_father));
+        words.add(new Word("mother", "әṭa", R.drawable.family_mother, R.raw.family_mother));
+        words.add(new Word("son", "angsi", R.drawable.family_son, R.raw.family_son));
+        words.add(new Word("daughter", "tune", R.drawable.family_daughter, R.raw.family_daughter));
+        words.add(new Word("older brother", "taachi", R.drawable.family_older_brother, R.raw.family_older_brother));
+        words.add(new Word("younger brother", "chalitti", R.drawable.family_younger_brother, R.raw.family_younger_brother));
+        words.add(new Word("older sister", "teṭe", R.drawable.family_older_sister, R.raw.family_older_sister));
+        words.add(new Word("younger sister", "kolliti", R.drawable.family_younger_sister, R.raw.family_younger_sister));
+        words.add(new Word("grandmother", "ama", R.drawable.family_grandmother, R.raw.family_grandmother));
+        words.add(new Word("grandfather", "paapa", R.drawable.family_grandfather, R.raw.family_grandfather));
 
-        words.add(new Word("one", "lutti", R.drawable.number_one, R.raw.number_one));
-        words.add(new Word("two", "otiiko", R.drawable.number_two, R.raw.number_two));
-        words.add(new Word("three", "tolookosu", R.drawable.number_three, R.raw.number_three));
-        words.add(new Word("four", "oyyisa", R.drawable.number_four, R.raw.number_four));
-        words.add(new Word("five", "massokka", R.drawable.number_five, R.raw.number_five));
-        words.add(new Word("six", "temmokka", R.drawable.number_six, R.raw.number_six));
-        words.add(new Word("seven", "kenekaku", R.drawable.number_seven, R.raw.number_seven));
-        words.add(new Word("eight", "kawinta", R.drawable.number_eight, R.raw.number_eight));
-        words.add(new Word("nine", "wo’e", R.drawable.number_nine, R.raw.number_nine));
-        words.add(new Word("ten", "na’aacha", R.drawable.number_ten, R.raw.number_ten));
-
-
-        WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_numbers);
-
+        WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_family);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
@@ -174,15 +136,12 @@ public class NumbersFragment extends Fragment {
 
                     // Setup a listener on the media player, so that we can stop and release the
                     // media player once the sound has finished playing.
-                    mMediaPlayer.setOnCompletionListener(mCompletionListener);
+                    mMediaPlayer.setOnCompletionListener(mOnCompletionListener);
                 }
             }
         });
 
-
         return rootView;
-
     }
-
 
 }

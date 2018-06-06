@@ -264,3 +264,5 @@ https://android-developers.googleblog.com/2015/05/android-design-support-library
 * Collapsing Toolbars
 * CoordinatorLayout and custom views
 
+Demos the new Android Design library.  
+https://github.com/chrisbanes/cheesesquare

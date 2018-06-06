@@ -19,6 +19,7 @@ import java.util.ArrayList;
  */
 public class NumbersFragment extends Fragment {
 
+
     /**
      * Handles playback of all the sound files
      */
@@ -111,8 +112,10 @@ public class NumbersFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+
         View rootView = inflater.inflate(R.layout.word_list, container, false);
         /** TODO: Insert all the code from the NumberActivity’s onCreate() method after the setContentView method call */
+
 
         // Create and setup the {@link AudioManager} to request audio focus
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);

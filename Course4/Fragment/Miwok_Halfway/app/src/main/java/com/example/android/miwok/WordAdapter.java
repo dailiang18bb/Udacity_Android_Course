@@ -51,8 +51,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the {@link AndroidFlavor} object located at this position in the list
         Word word = getItem(position);
 
-        //Log.v("NumbersActivity", "Current word: " + word);
-
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.englishWord);

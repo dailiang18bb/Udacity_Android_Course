@@ -187,7 +187,7 @@ https://www.youtube.com/playlist?list=PLWz5rJ2EKKc-lJo_RGGXL2Psr8vVCTWjM
 
 # View pager
 
-XML
+view_pager.xml
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -199,10 +199,10 @@ XML
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />x
+            android:layout_height="match_parent" />
     </LinearLayout>
 
-Main.java
+MainActivity.java
 
     public class MainActivity extends AppCompatActivity {
 
@@ -211,20 +211,17 @@ Main.java
             super.onCreate(savedInstanceState);
 
             // Set the content of the activity to use the activity_main.xml layout file
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.view_pager);
 
-            // Find the view pager that will allow the user to swipe between fragments
-            ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+            ViewPager viewPager = findViewById(R.id.viewpager);
 
-            // Create an adapter that knows which fragment should be shown on each page
-            SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+            MyFragmentPagerAdapter myFragmentPagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
 
-            // Set the adapter onto the view pager
-            viewPager.setAdapter(adapter);
-        }
+            viewPager.setAdapter(myFragmentPagerAdapter);
+            }
     }
     
-ViewPagerAdapter.java
+MyFragmentPagerAdapter.java
 
     public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 

@@ -184,3 +184,69 @@ https://developer.android.com/training/implementing-navigation/ancestral?utm_sou
 
 https://www.youtube.com/watch?v=zQekzaAgIlQ  
 https://www.youtube.com/playlist?list=PLWz5rJ2EKKc-lJo_RGGXL2Psr8vVCTWjM  
+
+# View pager
+
+XML
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.miwok.MainActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />x
+    </LinearLayout>
+
+Main.java
+
+    public class MainActivity extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+
+            // Set the content of the activity to use the activity_main.xml layout file
+            setContentView(R.layout.activity_main);
+
+            // Find the view pager that will allow the user to swipe between fragments
+            ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+
+            // Create an adapter that knows which fragment should be shown on each page
+            SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+
+            // Set the adapter onto the view pager
+            viewPager.setAdapter(adapter);
+        }
+    }
+    
+ViewPagerAdapter.java
+
+    public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
+
+        public MyFragmentPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            if (position == 0) {
+                return new NumbersFragment();
+            } else if (position == 1) {
+                return new FamilyFragment();
+            } else if (position == 2) {
+                return new ColorsFragment();
+            } else {
+                return new PhrasesFragment();
+            }
+        }
+
+        @Override
+        public int getCount() {
+            return 4;
+        }
+    }

@@ -5,12 +5,14 @@ public class Earthquake {
     private String place;
     private double magnitude;
     private long time;
+    private String url;
 
 
-    public Earthquake(String place, double magnitude, long time) {
+    public Earthquake(String place, double magnitude, long time, String url) {
         this.place = place;
         this.magnitude = magnitude;
         this.time = time;
+        this.url = url;
     }
 
 
@@ -24,5 +26,9 @@ public class Earthquake {
 
     public long getTime() {
         return time;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }

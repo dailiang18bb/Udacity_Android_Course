@@ -32,3 +32,22 @@ To hide the divider between list items, there are two attributes that you can se
         android:layout_height="match_parent"
         android:divider="@null"
         android:dividerHeight="0dp"/>
+
+## setOnItemClick
+
+    earthquakeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(earthquakes.get(position).getUrl()));
+                startActivity(intent);
+
+            }
+        });
+        
+## URL intent
+
+    Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(earthquakes.get(position).getUrl()));
+                startActivity(intent);

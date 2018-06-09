@@ -18,3 +18,17 @@ For details on the specific attributes, check out the TextView documentation. Sp
             android:textColor="@color/textColorEarthquakeDetails"
             android:textSize="12sp"
             tools:text="30km S of" />
+
+
+
+## Hide divider between list items
+
+To hide the divider between list items, there are two attributes that you can set on the ListView XML element within the earthquake_activity.xml file. We want to set android:divider to be “@null” and android:dividerHeight to be “0dp”.
+
+     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>

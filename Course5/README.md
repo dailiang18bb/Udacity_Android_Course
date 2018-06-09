@@ -49,5 +49,5 @@ To hide the divider between list items, there are two attributes that you can se
 ## URL intent
 
     Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(earthquakes.get(position).getUrl()));
-                startActivity(intent);
+    intent.setData(Uri.parse(earthquakes.get(position).getUrl()));
+    startActivity(intent);

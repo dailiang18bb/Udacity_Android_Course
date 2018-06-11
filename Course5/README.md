@@ -83,9 +83,13 @@ Also interesting to note is that while Checked exceptions are subclasses of Exce
       }
       catch (ExceptionType1 e1) {
           // Handle ExceptionType1 exceptions
+          e1.printStackTrace();
+          Log.e(LOG_TAG, "Problem parsing the earthquake JSON results", e);
+
       }
       catch (ExceptionType2 e2) {
           // Handle ExceptionType2 exceptions
+          
       }
       // ...
       finally {

@@ -58,4 +58,8 @@ To hide the divider between list items, there are two attributes that you can se
 
 * `String builder` Mutable, **can** change Once created.
 
-
+      StringBuilder mBuilder = new StringBuilder();
+      mBuilder.append("World");
+      mBuilder.deleteCharAt(3);
+      mBuilder.append(" builder").append(".");
+      String builderResult = mBuilder.toString();  // Word builder.

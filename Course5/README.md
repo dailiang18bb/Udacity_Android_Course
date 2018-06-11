@@ -63,3 +63,21 @@ To hide the divider between list items, there are two attributes that you can se
       mBuilder.deleteCharAt(3);
       mBuilder.append(" builder").append(".");
       String builderResult = mBuilder.toString();  // Word builder.
+
+## Exceptions
+* The `try-catch-finally` structure:
+
+      try {
+          // Code bock
+      }
+      catch (ExceptionType1 e1) {
+          // Handle ExceptionType1 exceptions
+      }
+      catch (ExceptionType2 e2) {
+          // Handle ExceptionType2 exceptions
+      }
+      // ...
+      finally {
+          // Code always executed after the
+          // try and any catch block
+      }

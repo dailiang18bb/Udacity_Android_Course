@@ -97,3 +97,16 @@ Also interesting to note is that while Checked exceptions are subclasses of Exce
           // try and any catch block
           // always using for clean up
       }
+
+* Throw exception in the method signiture
+
+      private URL createUrl(String stringUrl)  throws MalformedURLException {
+            URL url = null;
+            try {
+                url = new URL(stringUrl);
+            } catch (MalformedURLException exception) {
+                Log.e(LOG_TAG, "Error with creating URL", exception);
+                return null;
+            }
+            return url;
+        }

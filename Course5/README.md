@@ -51,3 +51,11 @@ To hide the divider between list items, there are two attributes that you can se
     Intent intent = new Intent(Intent.ACTION_VIEW);
     intent.setData(Uri.parse(earthquakes.get(position).getUrl()));
     startActivity(intent);
+
+## String builder VS String
+
+* `String` Immutable, **can't** change once created.
+
+* `String builder` Mutable, **can** change Once created.
+
+

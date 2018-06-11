@@ -95,4 +95,5 @@ Also interesting to note is that while Checked exceptions are subclasses of Exce
       finally {
           // Code always executed after the
           // try and any catch block
+          // always using for clean up
       }

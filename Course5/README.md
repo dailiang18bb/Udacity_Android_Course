@@ -65,6 +65,17 @@ To hide the divider between list items, there are two attributes that you can se
       String builderResult = mBuilder.toString();  // Word builder.
 
 ## Exceptions
+* **Checked** vs. **Unchecked** exceptions
+
+An Unchecked exception can be considered one that has a chance of occurring, but based on your code, the compiler doesn't know. In other words, it's a programming error. For example, if you're taking user input and expect a number, and the user enters something you didn't expect, such as a string, your program would throw a NumberFormatException. You can predict these scenarios and put try/catch to try and avoid them before they occur. Very rarely seen is a person adding a throws NullPointerException or throws NumberFormatException (or throwing any other Unchecked exception, for that matter). It's allowed, but explicitly creating that exception is weird and most people would say that it's bad coding style.
+
+Note that all Checked suggestions must be caught or thrown to something that can handle it; if you don't do it, your program won't compile. If you throw it to something that can't handle it, then your program will likely crash if it occurs.
+
+Also note that an unchecked Exception (eg: one that occurs during runtime, usually via bad user input or whatnot) will also usually crash your program. Thus, it's usually a good idea to use try/catch when something can potentially go wrong, but you don't have to.
+
+Also interesting to note is that while Checked exceptions are subclasses of Exception and Unchecked exceptions are subclasses of RuntimeException, RuntimeException itself is a subclass of Exception. That means that if you really wanted to, a single try {} catch (Exception e) {} will catch every single exception your program could possibly throw. Granted, this is considered a horrible way to deal with exceptions, and you should catch each one separately so that you can handle them separately. Please try not to use it.
+
+
 * The `try-catch-finally` structure:
 
       try {

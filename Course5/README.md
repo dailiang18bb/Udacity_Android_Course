@@ -113,6 +113,9 @@ Also interesting to note is that while Checked exceptions are subclasses of Exce
 
 ## AsyncTask
 
+https://developer.android.com/reference/android/os/AsyncTask?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+
 * The 4 steps, When an asynchronous task is executed, the task goes through 4 steps:
 
 `onPreExecute()`, invoked on the UI thread before the task is executed. This step is normally used to setup the task, for instance by showing a progress bar in the user interface.  
@@ -122,3 +125,5 @@ Also interesting to note is that while Checked exceptions are subclasses of Exce
 `onProgressUpdate(Progress...)`, invoked on the UI thread after a call to publishProgress(Progress...). The timing of the execution is undefined. This method is used to display any form of progress in the user interface while the background computation is still executing. For instance, it can be used to animate a progress bar or show logs in a text field.  
 
 `onPostExecute(Result)`, invoked on the UI thread after the background computation finishes. The result of the background computation is passed to this step as a parameter.
+
+

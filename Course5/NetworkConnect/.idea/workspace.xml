@@ -31,7 +31,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/networkconnect/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="465">
               <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
               <folding />
             </state>
@@ -41,8 +41,8 @@
       <file leaf-file-name="NetworkFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/networkconnect/NetworkFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2807">
-              <caret line="58" column="61" lean-forward="false" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+            <state relative-caret-position="1110">
+              <caret line="104" column="43" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -2298,7 +2298,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/networkconnect/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="465">
           <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
           <folding />
         </state>
@@ -2306,8 +2306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/networkconnect/NetworkFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2807">
-          <caret line="58" column="61" lean-forward="false" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+        <state relative-caret-position="1110">
+          <caret line="104" column="43" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="43" />
           <folding />
         </state>
       </provider>
